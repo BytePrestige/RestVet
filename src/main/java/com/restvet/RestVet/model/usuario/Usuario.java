@@ -10,6 +10,7 @@ import java.util.List;
 /**
  * @author Lincoln
  */
+
 @Table(name = "usuario")
 @Entity(name = "Usuario")
 @Getter
@@ -22,7 +23,8 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idUsuario;
-    private String nomeUsuario, email, senha, telefoneUsuario;
+    
+  private String nomeUsuario, email, senha, telefoneUsuario;
 
     @ManyToMany
     @JoinTable(
@@ -31,6 +33,7 @@ public class Usuario {
             inverseJoinColumns = @JoinColumn(name = "ID_ENDERECO")
     )
     private List<Endereco> enderecos = new ArrayList<>();
+
 
     public void atualizaInformacoes(DadosAtualizadoUsuario dados){
         if (dados.nome() != null){
@@ -46,6 +49,7 @@ public class Usuario {
             this.senha = dados.senha();
         }
     }
+  
     public Usuario(DadosCadastroUsuario usuario){
         this.email = usuario.email();
         this.senha = usuario.senha();
