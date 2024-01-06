@@ -9,7 +9,7 @@ import lombok.*;
  * @author Lincoln
  */
 @Entity(name = "UsuarioEndereco")
-@Table(name = "USUARIO_ENDERECO")
+@Table(name = "usuario_endereco")
 @Setter
 @Getter
 @NoArgsConstructor
@@ -17,12 +17,12 @@ import lombok.*;
 public class UsuarioEndereco {
 
     @ManyToOne
-    @JoinColumn(name = "ID_USUARIO")
+    @JoinColumn(name = "id_usuario")
     @Id
     private Usuario usuario;
 
     @ManyToOne
-    @JoinColumn(name = "ID_ENDERECO")
+    @JoinColumn(name = "id_endereco")
     @Id
     private Endereco endereco;
 

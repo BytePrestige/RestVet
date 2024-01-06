@@ -10,17 +10,20 @@ import java.util.List;
  * @author Lincoln
  */
 @Entity(name = "Endereco")
-@Table(name = "ENDERECO")
+
+@Table(name = "endereco")
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of = "ID")
+@EqualsAndHashCode(of = "idEndereco")
 public class Endereco {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int ID;
+
+    private Long idEndereco;
 
     private String cep;
     private String rua;
