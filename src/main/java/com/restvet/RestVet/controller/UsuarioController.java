@@ -26,6 +26,11 @@ public class UsuarioController {
         return ResponseEntity.ok(new DadosCompletoUsuario(usuario));
     }
 
+    @GetMapping
+    public ResponseEntity<List <DadosCompletoUsuario>> todosUsuarios(){
+        return ResponseEntity.ok(repository.findAll().stream().map(DadosCompletoUsuario::new).toList());
+    }
+    
     @PutMapping
     @Transactional
     public ResponseEntity atualizar(@RequestBody DadosAtualizadoUsuario dados){
