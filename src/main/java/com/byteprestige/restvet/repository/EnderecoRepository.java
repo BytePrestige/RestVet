@@ -1,6 +1,6 @@
-package com.restvet.RestVet.repository;
+package com.byteprestige.restvet.repository;
 
-import com.restvet.RestVet.model.endereco.Endereco;
+import com.byteprestige.restvet.model.endereco.Endereco;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

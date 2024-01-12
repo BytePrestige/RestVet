@@ -1,6 +1,6 @@
-package com.restvet.RestVet.repository;
+package com.byteprestige.restvet.repository;
 
-import com.restvet.RestVet.model.usuario.Usuario;
+import com.byteprestige.restvet.model.usuario.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

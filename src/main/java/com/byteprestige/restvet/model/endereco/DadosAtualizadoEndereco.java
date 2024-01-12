@@ -1,7 +1,5 @@
-package com.restvet.RestVet.model.endereco;
+package com.byteprestige.restvet.model.endereco;
 
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 /**

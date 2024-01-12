@@ -1,15 +1,17 @@
-package com.restvet.RestVet.controller;
+package com.byteprestige.restvet.controller;
 
-import com.restvet.RestVet.model.usuario.DadosAtualizadoUsuario;
-import com.restvet.RestVet.model.usuario.DadosCadastroUsuario;
-import com.restvet.RestVet.model.usuario.DadosCompletoUsuario;
-import com.restvet.RestVet.model.usuario.Usuario;
-import com.restvet.RestVet.repository.UsuarioRepository;
+import com.byteprestige.restvet.model.usuario.DadosAtualizadoUsuario;
+import com.byteprestige.restvet.model.usuario.DadosCadastroUsuario;
+import com.byteprestige.restvet.model.usuario.DadosCompletoUsuario;
+import com.byteprestige.restvet.model.usuario.Usuario;
+import com.byteprestige.restvet.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import java.util.List;
 
 /**
  * @author Lincoln
@@ -27,7 +29,7 @@ public class UsuarioController {
     }
 
     @GetMapping
-    public ResponseEntity<List <DadosCompletoUsuario>> todosUsuarios(){
+    public ResponseEntity<List<DadosCompletoUsuario>> todosUsuarios(){
         return ResponseEntity.ok(repository.findAll().stream().map(DadosCompletoUsuario::new).toList());
     }
     

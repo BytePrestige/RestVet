@@ -1,6 +1,6 @@
-package com.restvet.RestVet.model.usuario;
+package com.byteprestige.restvet.model.usuario;
 
-import com.restvet.RestVet.model.endereco.Endereco;
+import com.byteprestige.restvet.model.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 

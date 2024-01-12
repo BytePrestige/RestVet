@@ -1,16 +1,11 @@
-package com.restvet.RestVet.model.endereco;
+package com.byteprestige.restvet.model.endereco;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.restvet.RestVet.model.usuario.Usuario;
+import com.byteprestige.restvet.model.usuario.Usuario;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /**

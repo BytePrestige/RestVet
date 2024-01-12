@@ -1,9 +1,9 @@
-package com.restvet.RestVet.controller;
+package com.byteprestige.restvet.controller;
 
-import com.restvet.RestVet.model.endereco.*;
-import com.restvet.RestVet.model.midTables.DtoUsuarioEndereco;
-import com.restvet.RestVet.repository.EnderecoRepository;
-import com.restvet.RestVet.repository.UsuarioRepository;
+import com.byteprestige.restvet.model.endereco.*;
+import com.byteprestige.restvet.model.midTables.DtoUsuarioEndereco;
+import com.byteprestige.restvet.repository.EnderecoRepository;
+import com.byteprestige.restvet.repository.UsuarioRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

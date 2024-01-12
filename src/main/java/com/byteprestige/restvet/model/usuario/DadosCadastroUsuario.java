@@ -1,4 +1,4 @@
-package com.restvet.RestVet.model.usuario;
+package com.byteprestige.restvet.model.usuario;
 
 /**
  * @author Lincoln

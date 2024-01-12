@@ -1,4 +1,4 @@
-package com.restvet.RestVet.model.midTables;
+package com.byteprestige.restvet.model.midTables;
 
 /**
  * @author Lincoln
