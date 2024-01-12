@@ -69,8 +69,15 @@ public class EnderecoController {
 
         return ResponseEntity.ok().build();
     }
+    
+    @DeleteMapping("/delete/{id}")
+    @Transactional
+    public ResponseEntity deleteEndereco(@PathVariable Long id){
+        repositoryEndereco.deleteById(id);
+        return ResponseEntity.noContent().build();
+    }
 
-    @PutMapping("/delete")
+    @DeleteMapping("/usuario/delete")
     @Transactional
     public ResponseEntity deletaEnderecoDoUsuario(@RequestBody DtoUsuarioEndereco dtoUsuarioEndereco){
         var endereco = repositoryEndereco.getReferenceById(dtoUsuarioEndereco.idEndereco());

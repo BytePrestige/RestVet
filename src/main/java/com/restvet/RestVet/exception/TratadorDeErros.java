@@ -18,6 +18,12 @@ public class TratadorDeErros {
         return ResponseEntity.notFound().build();
     }
 
+    @ExceptionHandler(DataIntegrityViolationException.class)
+    public ResponseEntity tratarErroDeConflitoSQL(DataIntegrityViolationException ex){
+        String mensagemErro = "Erro de integridade de dados: " + ex.getMessage();
+        return new ResponseEntity<>(mensagemErro, HttpStatus.CONFLICT);
+    }
+    
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity tratarErroBadRequest(MethodArgumentNotValidException exception){
         var erros = exception.getFieldErrors();
