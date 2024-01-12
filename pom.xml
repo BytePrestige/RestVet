@@ -8,8 +8,8 @@
 		<version>3.2.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.restvet</groupId>
-	<artifactId>RestVet</artifactId>
+	<groupId>com.byteprestige</groupId>
+	<artifactId>restvet</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>RestVet</name>
 	<description>Demo project for Spring Boot</description>
